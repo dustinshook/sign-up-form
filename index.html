@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Trade+Winds&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Trade+Winds&display=swap" rel="stylesheet"> 
     <title>Sign up form</title>
 </head>
 <body>
@@ -14,51 +14,49 @@
         <div id="side-bar">
             <div class="logo">
                 <img src="assets/odin-lined.png" alt="logo">
-                <span class="logo-text">The Odin Project</span>
+                <span class="logo-text">Odin Roofing</span>
             </div>
         </div>
         <div id="mainContent">
             <section class="info">
-                <span class="description">Sign up form</span>
-                <span class="tag-line">Please fill in this form to create an account.</span>
+                <span class="description">Why settle for ordinary when you can have extraordinary? At Odin Roofing, we take great pride in transforming houses into homes by providing top-notch roofing solutions that stand the test of time.</span>
+                <span class="description tag-line">Need a quote? Submit your information below.</span>
             </section>
-            <section>
+            <section class="sign-up">
+                
                 <form>
-                    <legend>Sign up</legend>
+                    <span class="title">Let's do this!</span>
                     <div class="input-group">
-                        <label for="name">Name</label>
-                        <input type="text" name="name" id="name" placeholder="Enter your name">
+                        <label for="name">FIRST NAME</label>
+                        <input type="text" name="name" id="name" placeholder="Huginn">
                     </div>
                     <div class="input-group">
-                        <label for="surname">Surname</label>
-                        <input type="text" name="surname" id="surname" placeholder="Enter your surname">
+                        <label for="surname">LAST NAME</label>
+                        <input type="text" name="surname" id="surname" placeholder="Muninn">
                     </div>
                     <div class="input-group">
-                        <label for="email">Email</label>
-                        <input type="email" name="email" id="email" placeholder="Enter your email">
-                    </div>
-
-                    <div class="input-group">
-                        <label for="phone">Phone</label>
-                        <input type="tel" name="phone" id="phone" placeholder="Enter your phone number">
+                        <label for="email">EMAIL</label>
+                        <input type="email" name="email" id="email" placeholder="wanderer@asgard.com">
                     </div>
 
                     <div class="input-group">
-                        <label for="password">Password</label>
-                        <input type="password" name="password" id="password" placeholder="Enter your password">
-                    </div>
-                    <div class="input-group">
-                        <label for="confirm-password">Confirm Password</label>
-                        <input type="password" name="confirm-password" id="confirm-password" placeholder="Confirm your password">
+                        <label for="phone">PHONE NUMBER</label>
+                        <input type="tel" name="phone" id="phone" placeholder="777-777-7777">
                     </div>
 
                     <div class="input-group">
-                        <input type="checkbox" name="terms" id="terms">
-                        <label for="terms">I agree to the <a href="#">terms and conditions</a></label>
+                        <label for="password">PASSWORD</label>
+                        <input type="password" name="password" id="password">
                     </div>
+                    <div class="input-group">
+                        <label for="confirm-password">CONFIRM PASSWORD</label>
+                        <input type="password" name="confirm-password" id="confirm-password">
+                    </div>
+
 
                 </form>
-
+            </section>
+            <section class="submit-info">
                 <div class="input-group">
                     <button type="submit" class="btn">Sign up</button>
                 </div>
@@ -66,7 +64,6 @@
                 <div class="input-group">
                     <span class="tag-line">Already have an account? <a href="#">Sign in</a></span>
                 </div>
-                
             </section>
         </div>
         <div id="footer"></div>
