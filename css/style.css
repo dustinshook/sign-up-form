@@ -120,6 +120,11 @@ form {
     letter-spacing: 0.1em;
 }
 
+.input-group > input:focus {
+    outline: none;
+    border: 2px solid var(--color-tertiary);
+}
+
 .submit-info {
     display: flex;
     flex-direction: column;
@@ -128,7 +133,7 @@ form {
     margin-left: var(--spacing);
 }
 
-.input-group > button {
+.btn {
     padding: 0.5em 2em;
     border-radius: var(--radius);
     border: 1px solid #ccc;
@@ -138,4 +143,12 @@ form {
     font-size: var(--size-xs);
     font-weight: 600;
     cursor: pointer;
+}
+
+.btn:hover {
+    background-color: var(--color-secondary);
+}
+
+.btn:active {
+    background-color: var(--color-tertiary);
 }
