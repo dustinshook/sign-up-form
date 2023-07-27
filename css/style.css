@@ -1,0 +1,81 @@
+:root {
+    /* colors */
+    --color-primary: #f9ed69;
+    --color-secondary: #f08a5d;
+    --color-tertiary: #b83b5e;
+    /* layout sizes */
+    --spacing: 1rem;
+    --radius: 0.3rem;
+    --line: 0.1rem solid var(--color-primary);
+    --shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+    /* font sizes */
+    --size-xxs: 1rem;
+    --size-xs: 1.2rem;
+    --size-s: 1.4rem;
+    --size-m: 1.6rem;
+    --size-l: 1.8rem;
+    --size-xl: 2rem;
+    --size-xxl: 2.4rem;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#container {
+    border: 0px solid transparent;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+#container > * {
+    display: flex;
+}
+
+#side-bar {
+    height: 100vh;
+    background-image: url(../assets/lisa-obenauf-IagoFxKy6q0-unsplash.jpg);
+    background-size: cover;
+    align-items: center;
+}
+
+#side-bar .logo {
+    background-color: #111111c6;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: var(--spacing);
+    margin-bottom: 8em;
+    font-size: var(--size-xl);
+    font-family: 'Trade Winds', cursive;
+    font-weight: 400;
+    color: #fff;
+}
+
+.logo > img {
+    width: 120px;
+    height: 150px;
+}
+
+.description {
+    font-size: var(--size-m);
+    font-weight: 600;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+#mainContent {
+    height: 100vh;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.info {
+    
+}
+
