@@ -31,10 +31,44 @@ const handleInput = ({ target }) => {
     }
 };
 
+const handleFormSubmit = (event) => {
+    event.preventDefault();
+    const form = document.querySelector('form');
+    const inputs = document.querySelectorAll('input');
+    const password = document.getElementById('password');
 
+    inputs.forEach(input => {
+        if (!input.id.includes('confirm')) {
+            if (input.validity.valid) {
+                input.classList.remove('invalid');
+                hideCustomError(input);
+            } else {
+                input.classList.add('invalid');
+                displayCustomError(input);
+            }
+        } else {
+            if (input.value === password.value && input.value !== '') {
+                input.classList.remove('invalid');
+                input.setCustomValidity('');
+                hideCustomError(input);
+            } else {
+                input.classList.add('invalid');
+                input.setCustomValidity('Passwords do not match');
+                displayCustomError(input);
+            }
+        }
+    });
+
+    if (form.checkValidity()) {
+        window.alert('Success! Your quote is on its way!');
+    } else {
+        window.alert('Error! Please check the form and try again');
+    }
+};
 document.addEventListener('DOMContentLoaded', () => {
     const inputs = document.querySelectorAll('input');
     const password = document.getElementById('password');
+    const submitForm = document.getElementById('submit');
 
     inputs.forEach(input => {
         if (!input.id.includes('confirm')) {
@@ -62,4 +96,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         }
     });
+
+    submitForm.addEventListener('click', handleFormSubmit);
+
 });
