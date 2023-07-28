@@ -24,36 +24,40 @@
             </section>
             <section class="sign-up">
                 
-                <form>
+                <form novalidate>
                     <span class="title">Let's do this!</span>
                     <div class="input-group">
                         <label for="name">FIRST NAME</label>
-                        <input type="text" name="name" id="name" placeholder="Huginn">
+                        <input type="text" name="name" id="name" placeholder="Huginn" required>
+                        <span class="error"></span>
                     </div>
                     <div class="input-group">
                         <label for="surname">LAST NAME</label>
-                        <input type="text" name="surname" id="surname" placeholder="Muninn">
+                        <input type="text" name="surname" id="surname" placeholder="Muninn" required>
+                        <span class="error"></span>
                     </div>
                     <div class="input-group">
                         <label for="email">EMAIL</label>
-                        <input type="email" name="email" id="email" placeholder="wanderer@asgard.com">
+                        <input type="email" name="email" id="email" placeholder="wanderer@asgard.com" required>
+                        <span class="error"></span>
                     </div>
 
                     <div class="input-group">
                         <label for="phone">PHONE NUMBER</label>
-                        <input type="tel" name="phone" id="phone" placeholder="777-777-7777">
+                        <input type="tel" name="phone" id="phone" placeholder="777-777-7777" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+                        <span class="error"></span>
                     </div>
 
                     <div class="input-group">
                         <label for="password">PASSWORD</label>
-                        <input type="password" name="password" id="password">
+                        <input type="password" name="password" id="password" pattern="(?=.*[A-Z])(?=.*[!@#$%^&*])(.{8,})" required>
+                        <span class="error"></span>
                     </div>
                     <div class="input-group">
                         <label for="confirm-password">CONFIRM PASSWORD</label>
-                        <input type="password" name="confirm-password" id="confirm-password">
+                        <input type="password" name="confirm-password" id="confirm-password" required>
+                        <span class="error"></span>
                     </div>
-
-
                 </form>
             </section>
             <section class="submit-info">

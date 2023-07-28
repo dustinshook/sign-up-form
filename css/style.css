@@ -49,9 +49,10 @@ body {
     justify-content: center;
     align-items: center;
     padding: var(--spacing);
-    font-size: var(--size-xl);
+    font-size: var(--size-xxl);
     font-family: 'Trade Winds', cursive;
     color: #fff;
+    margin-bottom: 1em;
 }
 
 .logo > img {
@@ -61,9 +62,11 @@ body {
 
 .description {
     font-size: var(--size-m);
-    font-weight: 500;
+    font-weight: 700;
     margin: var(--spacing);
     width: 50ch;
+    line-height: 1.5;
+    letter-spacing: 0.05em;
 }
 
 #mainContent {
@@ -85,7 +88,6 @@ body {
     background-color: #fff;
     border-bottom: 1px solid #ccc;
     box-shadow: var(--shadow);
-    border-radius: var(--radius);
 }
 
 form {
@@ -123,6 +125,10 @@ form {
 .input-group > input:focus {
     outline: none;
     border: 2px solid var(--color-tertiary);
+}
+
+.input-group > input.invalid {
+    border: 2px solid red;
 }
 
 .submit-info {
