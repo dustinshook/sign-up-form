@@ -158,3 +158,11 @@ form {
 .btn:active {
     background-color: var(--color-tertiary);
 }
+
+span.error {
+    color: red;
+    font-size: var(--size-xxs);
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    margin-top: 0.5em;
+}
