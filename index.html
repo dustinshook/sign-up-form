@@ -7,6 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Trade+Winds&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <title>Sign up form</title>
 </head>
 <body>
@@ -49,8 +50,8 @@
                     </div>
 
                     <div class="input-group">
-                        <label for="password">PASSWORD</label>
-                        <input type="password" name="password" id="password" pattern="(?=.*[A-Z])(?=.*[!@#$%^&*])(.{8,})" required title="Password must be at least 8 characters long, contain at least 1 capital letter, and at least 1 special character (!@#$%^&*).">
+                        <label for="password">PASSWORD <i class="fa-solid fa-circle-info" title="Password must be at least 8 characters long, contain at least 1 capital letter, and at least 1 special character (!@#$%^&*)."></i></label>
+                        <input type="password" name="password" id="password" pattern="(?=.*[A-Z])(?=.*[!@#$%^&*])(.{8,})" required>
                         <span class="error"></span>
                     </div>
                     <div class="input-group">
